@@ -16,6 +16,8 @@ gem 'simple_form'
 gem 'turbo-rails'
 
 group :development, :test do
+  gem "better_errors"
+  gem "binding_of_caller"
   gem 'brakeman', require: false
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'
   gem 'factory_bot_rails'
