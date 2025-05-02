@@ -9,7 +9,8 @@
     "nodemon": "^3.1.10",
     "postcss": "^8.5.3",
     "postcss-cli": "^11.0.1",
-    "sass": "^1.87.0"
+    "sass": "^1.87.0",
+    "vite-plugin-full-reload": "^1.2.0"
   },
   "scripts": {
     "build:css:compile": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules",
@@ -19,5 +20,9 @@
   },
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "vite-plugin-ruby": "^5.1.0"
+  }
 }
