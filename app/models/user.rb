@@ -3,7 +3,8 @@ class User < ApplicationRecord
 
   validates :name, presence: true, length: { maximum: 20 }
 
-  has_one :meal_plan, dependent: :destroy
+  has_one :meal_plan_subscribe, dependent: :destroy
+  has_one :meal_plan, through: :meal_plan_subscribe
 
   # 下記はユーザのメールアドレスを使用しないため、無効化
   def email_required?
