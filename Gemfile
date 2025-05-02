@@ -21,3 +21,7 @@ group :development do
   gem 'sgcop', github: 'SonicGarden/sgcop', branch: 'main'
   gem 'web-console'
 end
+
+group :test do
+  gem 'rspec-rails'
+end
