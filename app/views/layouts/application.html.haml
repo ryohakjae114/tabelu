@@ -12,6 +12,26 @@
     %link{:href => "/icon.png", :rel => "icon", :type => "image/png"}/
     %link{:href => "/icon.svg", :rel => "icon", :type => "image/svg+xml"}/
     %link{:href => "/icon.png", :rel => "apple-touch-icon"}/
-    = vite_stylesheet_tag 'application', 'data-turbo-track': 'reload'
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
   %body
-    = yield
+    %nav.navbar.bg-success
+      .container-fluid
+        = link_to 'Tabelu', root_path, class: 'navbar-brand fs-2 text-white'
+        %ul.nav.me-auto.ms-4.mb-lg-0
+          -# %li.nav-item
+          -#   = link_to t('carts.show.title'), cart_path, class: 'nav-link fs-4 text-white'
+        -# - if user_signed_in?
+        -#   .dropdown
+        -#     = button_tag current_user.name, class: 'text-white nav-link dropdown-toggle', data: { 'bs-toggle': 'dropdown' }
+        -#     %ul.dropdown-menu.dropdown-menu-end
+        -#       %li
+        -#         = button_to t('menu.logout'), destroy_user_session_path,
+        -#                     method: :delete,
+        -#                     class: 'dropdown-item',
+        -#                     data: { turbo_confirm: t('menu.logout_confirm') }
+        -#       %li= link_to t('devise.registrations.edit.title', resource: User.model_name.human), edit_user_registration_path, class: 'dropdown-item'
+        -# - else
+          = link_to t('devise.sessions.new.sign_in'), new_user_session_path, class: 'btn btn-outline-light'
+    = render 'layouts/flash_message'
+    .container
+      = yield
