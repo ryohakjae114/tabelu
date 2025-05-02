@@ -13,6 +13,7 @@
     %link{:href => "/icon.svg", :rel => "icon", :type => "image/svg+xml"}/
     %link{:href => "/icon.png", :rel => "apple-touch-icon"}/
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbo-track': 'reload', type: 'module'
   %body
     %nav.navbar.bg-success
       .container-fluid
@@ -29,7 +30,6 @@
                             method: :delete,
                             class: 'dropdown-item',
                             data: { turbo_confirm: t('menu.logout_confirm') }
-              -# %li= link_to t('devise.registrations.edit.title', resource: User.model_name.human), edit_user_registration_path, class: 'dropdown-item'
         - else
           = link_to t('devise.sessions.new.sign_in'), new_user_session_path, class: 'btn btn-outline-light'
     = render 'layouts/flash_message'
