@@ -26,6 +26,8 @@
             = button_tag current_user.name, class: 'text-white nav-link dropdown-toggle', data: { 'bs-toggle': 'dropdown' }
             %ul.dropdown-menu.dropdown-menu-end
               %li
+                = link_to t('users.meal_plan_subscribe.edit.title'), edit_users_meal_plan_subscribe_path, class: 'dropdown-item'
+              %li
                 = button_to t('menu.logout'), destroy_user_session_path,
                             method: :delete,
                             class: 'dropdown-item',
