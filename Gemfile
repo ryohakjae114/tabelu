@@ -4,6 +4,7 @@ gem 'rails', '~> 8.0.2'
 
 gem 'bootsnap', require: false
 gem 'cssbundling-rails'
+gem 'devise'
 gem 'haml-rails'
 # 仕様変更によるリスクが大きいので指定
 gem 'pg', '~> 1.5.9'
