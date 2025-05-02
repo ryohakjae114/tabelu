@@ -1,0 +1,12 @@
+.w-75.mx-auto
+  = title_dom t('devise.registrations.new.sign_up')
+
+  = simple_form_for(resource, as: resource_name, url: user_registration_path) do |f|
+    = f.input :name, required: true, autofocus: true
+    = f.input :password, required: true
+    = f.input :password_confirmation, required: true
+    = f.input :remember_me, as: :boolean
+    = f.button :submit, class: 'btn-primary'
+
+    .mt-5
+    = link_to t('devise.sessions.new.sign_in'), new_user_session_path, class: 'd-block'

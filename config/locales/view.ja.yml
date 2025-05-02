@@ -1,0 +1,25 @@
+ja:
+  simple_form:
+    required:
+      html: '<span title="required" class="badge bg-danger">必須</abbr>'
+  helpers:
+    submit:
+      create: '登録する'
+      update: '更新する'
+    published: '公開'
+    unpublished: '非公開'
+    paid: '支払済'
+    unpaid: '未支払'
+  general:
+    destroy: '削除する'
+    none: 'なし'
+    not_recorded: '未登録'
+    to_back: '%{text}に戻る'
+    tax_included_label: '(税込)'
+    are_you_sure: '本当によろしいですか？'
+  date:
+    formats:
+      default: '%Y年%m月%d日'
+  menu:
+    logout: 'ログアウト'
+    logout_confirm: 'ログアウトしますか？'

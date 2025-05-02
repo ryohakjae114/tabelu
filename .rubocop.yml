@@ -1,2 +1,2 @@
 inherit_gem:
-  sgcop: ruby/rubocop.yml
+  sgcop: rails/rubocop.yml
