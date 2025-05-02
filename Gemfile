@@ -4,6 +4,7 @@ gem 'rails', '~> 8.0.2'
 
 gem 'bootsnap', require: false
 gem 'cssbundling-rails'
+gem 'haml-rails'
 # 仕様変更によるリスクが大きいので指定
 gem 'pg', '~> 1.5.9'
 gem 'propshaft'
@@ -17,7 +18,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'html2haml'
   gem 'sgcop', github: 'SonicGarden/sgcop', branch: 'main'
   gem 'web-console'
 end
