@@ -17,6 +17,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'html2haml'
   gem 'sgcop', github: 'SonicGarden/sgcop', branch: 'main'
   gem 'web-console'
 end
