@@ -11,6 +11,7 @@ gem 'pg', '~> 1.5.9'
 gem 'propshaft'
 # 仕様変更によるリスクが大きいので指定
 gem 'puma', '>= 5.0'
+gem 'simple_form'
 gem 'turbo-rails'
 
 group :development, :test do
