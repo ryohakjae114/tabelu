@@ -26,6 +26,7 @@ ja:
         unlock_token: 'ロック解除用トークン'
         updated_at: '更新日'
       user:
+        id: 'ID'
         name: '名前'
         confirmation_sent_at: 'パスワード確認送信時刻'
         confirmation_token: 'パスワード確認用トークン'
@@ -157,7 +158,7 @@ ja:
       send_instructions: 'アカウントのロック解除方法を数分以内にメールでご連絡します。'
       send_paranoid_instructions: 'アカウントが見つかった場合、アカウントのロック解除方法を数分以内にメールでご連絡します。'
       unlocked: 'アカウントをロック解除しました。'
-  user:
+  users:
     registrations:
       signed_up: 'アカウント登録が完了しました。あなたのIDは %{id} です。ログイン時に使用するので大切に保管してください。'
   errors:
