@@ -3,6 +3,8 @@ class User < ApplicationRecord
 
   validates :name, presence: true, length: { maximum: 20 }
 
+  has_one :meal_plan, dependent: :destroy
+
   # 下記はユーザのメールアドレスを使用しないため、無効化
   def email_required?
     false
