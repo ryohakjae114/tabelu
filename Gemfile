@@ -8,7 +8,7 @@ gem 'devise'
 gem 'haml-rails'
 gem 'jsbundling-rails'
 # 仕様変更によるリスクが大きいので指定
-gem 'pg', '~> 1.5.9'
+gem 'pg', '~> 1.6.1'
 gem 'propshaft'
 # 仕様変更によるリスクが大きいので指定
 gem 'puma', '>= 5.0'
